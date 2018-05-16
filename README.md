@@ -72,6 +72,7 @@ Accessible Rich Internet Applications (ARIA) defines ways to make Web content an
   - [Widget attributes](#widget-attributes)
     - [aria-autocomplete](#aria-autocomplete)
     - [aria-checked - *(state)*](#aria-checked---state)
+    - [aria-current - *(state)*](#aria-current---state)
     - [aria-disabled - *(state)*](#aria-disabled---state)
     - [aria-expanded - *(state)*](#aria-expanded---state)
     - [aria-haspopup](#aria-haspopup)
@@ -378,7 +379,7 @@ A landmark region that contains a collection of items and objects that, as a who
 ### Widget attributes
 
 #### aria-autocomplete
-Indicates whether user input completion suggestions are provided.
+Indicates whether user input completion suggestions are provided.  
 Values: `<element aria-autocomplete="inline|list|both|none" ... />`
 
 | Value | Condition |
@@ -389,7 +390,7 @@ Values: `<element aria-autocomplete="inline|list|both|none" ... />`
 |    none    |    No input completion suggestions are provided.    |
 
 #### aria-checked - *(state)*
-Indicates the current "checked" state of checkboxes, radio buttons, and other widgets. See related aria-pressed and aria-selected.
+Indicates the current "checked" state of checkboxes, radio buttons, and other widgets. See related aria-pressed and aria-selected.  
 Values: `<element aria-checked="true|false|mixed" ... >`
 
 | Value | Condition |
@@ -398,6 +399,19 @@ Values: `<element aria-checked="true|false|mixed" ... >`
 |    false    |    The element is not selected.    |
 |    mixed    |    The element indicates both selected and unselected states.    |
 
+#### aria-current - *(state)*
+Indicates the element that represents the current item within a container or set of related elements. The aria-current attribute is used when an element within a set of related elements is visually styled to indicate it is the current item in the set.  
+Values: `<element aria-current="page|step|location|date|time|true|false" ... >`
+
+| Value | Condition |
+|--------|--------|
+| page | Represents the current page within a set of pages. |
+| step | Represents the current step within a process. |
+| location | Represents the current location within an environment or context. |
+| date | Represents the current date within a collection of dates. |
+| time | Represents the current time within a set of times. |
+| true | Represents the current item within a set. |
+| false | (default) 	Does not represent the current item within a set. |
 
 #### aria-disabled - *(state)*
 Indicates that the element is perceivable but disabled, so it is not editable or otherwise operable. See related aria-hidden and aria-readonly.  
