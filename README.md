@@ -419,7 +419,7 @@ Values: `<element aria-disabled="true|false" ... >`
 
 #### aria-expanded - *(state)*
 Indicates whether the element, or another grouping element it controls, is currently expanded or collapsed.  
-Values: `<element aria-expanded="true|false|udefined" ... >`
+Values: `<element aria-expanded="true|false|undefined" ... >`
 
 #### aria-haspopup
 Indicates that the element has a popup context menu or sub-level menu.  
